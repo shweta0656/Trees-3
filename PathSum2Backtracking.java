@@ -1,7 +1,10 @@
 /*
-Time Complexity: O(n⋅h), where n is the number of nodes and h is the height of the tree.
+Time Complexity: O(n), where n is the number of nodes, only one list, and not creating deep copies, considering
+the resultant nodes happen at constant number of places. If each and every path in the tree is a resultant node, then
+while making the result, we are making a deep copy. So the Resultant path is considered constant number of paths, hence
+the Tc = O(n)
 
-Space Complexity (excluding output): O(h).
+Space Complexity (excluding output): O(h) as the recursive stack space is O(h)
 
 Did this code successfully run on Leetcode: Yes
  */
